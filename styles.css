@@ -1,0 +1,101 @@
+body {
+  background: rgb(216, 216, 216);
+  font-family: "Merriweather", serif;
+  box-sizing: border-box;
+}
+
+#navbar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1;
+  padding-top: 20px;
+  border-style: solid;
+}
+
+header {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#navbar header {
+  text-align: center;
+}
+
+#navbar a {
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  float: none;
+}
+
+#navbar a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+#navbar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+#navbar li {
+  list-style: none;
+  border: 0.7px solid;
+  margin-right: 5px;
+}
+
+/* Main Document */
+
+#main-doc {
+  margin-left: 260px;
+  padding: 20px 12px;
+  height: 1000px;
+}
+
+.main-section {
+  margin-top: 30px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  word-wrap: normal;
+  word-break: normal;
+  line-height: 2;
+  background-color: #b9b9b9;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+li {
+  margin-left: 40px;
+  padding: 2px;
+}
+
+@media screen and (max-width: 700px) {
+  #navbar {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+    margin-bottom: 40px;
+  }
+  #navbar a {
+    text-align: left;
+  }
+  #navbar header {
+    position: relative;
+    text-align: center;
+  }
+  #main-doc {
+    margin-left: 0;
+    margin: 10px;
+  }
+}
